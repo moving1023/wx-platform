@@ -22,7 +22,7 @@ public class TextMessageHandler implements WxMpMessageHandler{
 		System.out.println("用户：" + wxMpXmlMessage.getFromUser());
 		System.out.println(wxMpXmlMessage);
 		return WxMpXmlOutMessage.TEXT()
-				.content("Welcome")
+				.content("欢迎关注此公众号")
 				.fromUser(wxMpXmlMessage.getToUser())
 				.toUser(wxMpXmlMessage.getFromUser())
 				.build();
